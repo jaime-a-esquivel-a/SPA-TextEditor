@@ -24,7 +24,7 @@ module.exports = () => {
       // Webpack plugin:
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'J.A.T.E'
       }),
       // InjectManifest plugin: (service worker)
       new InjectManifest({
@@ -40,8 +40,8 @@ module.exports = () => {
         description: 'Just Another Text Editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: '/',
-        publicPath: '/',
+        start_url: './',
+        publicPath: './',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
