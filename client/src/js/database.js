@@ -14,6 +14,7 @@ const initdb = async () =>
 
 // TODO: Agregar lógica a un método que acepte algo de contenido y lo agregue a la base de datos
 // export const putDb = async (content) => console.error('putDb not implemented');
+
 export const putDb = async (content) => {
 
   console.log('PUT to the database');
@@ -24,7 +25,14 @@ export const putDb = async (content) => {
 
   const store = txn.objectStore('jate');
 
-  const request = store.put({ content: content });
+  if (content == null){
+
+    console.log('Content is Null, abort');
+    return;
+  
+  }
+
+  const request = store.put({ id: 1, content: content });
 
   const result = await request;
   console.log('data saved to the database', result);
@@ -44,11 +52,14 @@ export const getDb = async (content) => {
 
   const store = txn.objectStore('jate');
 
-  const request = store.getAll();
+  const request = store.get(1);
 
   const result = await request;
-  console.log('result.content:', result);
-  return result;
+
+  request.onsuccess = function(event){
+    console.log('result.content:', result);
+    return result;
+  }
 
 }
 
