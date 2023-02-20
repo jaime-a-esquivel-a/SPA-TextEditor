@@ -1,6 +1,9 @@
 {
   "name": "JATE",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.14.1"
+  },
   "description": "PWA Text Editor",
   "main": "server.js",
   "scripts": {
