@@ -10,7 +10,7 @@ It uses IndexedDb to store data for persistency in the app.
 The app let the user create notes with or without internet connection that can be retrieved for further use.  
 
 
-[Deployed App] (http://)
+[Deployed App](https://spa-texteditor.herokuapp.com/)
 
 ## Installation
 
