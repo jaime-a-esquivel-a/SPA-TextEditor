@@ -34,7 +34,8 @@ The app let the user create notes with or without internet connection that can b
 ## Usage  
 
 - Open the Heroku site [Deployed App] (http://)
-- Click on the download button.  
+- Start typing! 🤓 👨🏻‍💻
+- Click on the download button (to use it as local App).  
 
 ## Technologies  
 - HTML
