@@ -33,7 +33,7 @@ The app let the user create notes with or without internet connection that can b
 
 ## Usage  
 
-- Open the Heroku site [Deployed App] (http://)
+- Open the Heroku site [Deployed App](https://spa-texteditor.herokuapp.com/)
 - Start typing! 🤓 👨🏻‍💻
 - Click on the download button (to use it as local App).  
 
